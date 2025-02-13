@@ -1,0 +1,118 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+	"edit_predictions": {
+		"disabled_globs": null,
+		"mode": "eager_preview"
+	},
+	"features": {
+		"edit_prediction_provider": "zed"
+	},
+	"language_models": {
+		"anthropic": {
+			"version": "1"
+		}
+	},
+	"active_pane_modifiers": {
+		"magnification": 1.1,
+		"border_size": 0.0
+	},
+	"auto_update_extensions": {
+		"html": true,
+		"Catppuccin": true,
+		"VSCode Icons Theme": true
+	},
+	"autosave": "on_window_change",
+	"auto_update": true,
+	"base_keymap": "JetBrains",
+	"buffer_font_size": null,
+	"buffer_font_family": "Menlo",
+	"buffer_font_fallbacks": ["0xProto Nerd Font Mono"],
+	"buffer_font_weight": 200,
+	"buffer_line_height": { "custom": 1.6 },
+	"cursor_blink": false,
+	"cursor_shape": "bar",
+	"scrollbar": {
+		"show": "always"
+	},
+	"tab_bar": { "show": true, "show_nav_history_buttons": false },
+	"tabs": {
+		"close_position": "right",
+		"file_icons": true,
+		"git_status": true,
+		"activate_on_close": "neighbour"
+	},
+	"enable_language_server": true,
+	"ensure_final_newline_on_save": false,
+	"git": {
+		"git_gutter": "tracked_files",
+		"inline_blame": {
+			"enabled": true,
+			"delay_ms": 2000
+		}
+	},
+	"indent_guides": {
+		"active_line_width": 2,
+		"background_coloring": "disabled",
+		"line_width": 1
+	},
+	"hard_tabs": true,
+	"file_finder": {
+		"modal_max_width": "medium",
+		"file_icons": true
+	},
+	"soft_wrap": "editor_width",
+	"tab_size": 4,
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"terminal": {
+		"shell": "system",
+		"working_directory": "current_project_directory",
+		"font_size": 15,
+		"blinking": "on",
+		"line_height": { "custom": 1.6 },
+		"toolbar": {
+			"breadcrumbs": true
+		}
+	},
+	"theme": {
+		"dark": "Catppuccin Macchiato",
+		"light": "Catppuccin Latte",
+		"mode": "system"
+	},
+	"icon_theme": {
+		"dark": "VSCode Icons (Dark)",
+		"light": "VSCode Icons (Light)",
+		"mode": "system"
+	},
+	"project_panel": {
+		"scrollbar": {
+			"show": "auto"
+		}
+	},
+	"ui_font_weight": 200,
+	"ui_font_size": 15,
+	"ui_font_family": "Menlo",
+	"ui_font_fallbacks": ["0xProto Nerd Font Mono"],
+	"assistant": {
+		"default_width": 540,
+		"default_model": {
+			"provider": "zed.dev",
+			"model": "claude-3-5-sonnet-latest"
+		},
+		"version": "2",
+		"enabled": true,
+		"provider": null
+	},
+	"show_completion_documentation": true,
+	"show_edit_predictions_in_menu": true,
+	"show_completions_on_input": true
+}
