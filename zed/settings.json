@@ -8,7 +8,17 @@
 // from the command palette or from `Zed` application menu.
 {
 	"edit_predictions": {
-		"disabled_globs": null,
+		"disabled_globs": [
+			"**/.env*",
+			"**/*.pem",
+			"**/*.key",
+			"**/*.cert",
+			"**/*.crt",
+			"**/secrets.yml",
+			"**/.zshrc",
+			"**/.bashrc",
+			"**/.gitignore"
+		],
 		"mode": "eager_preview"
 	},
 	"features": {
@@ -25,30 +35,35 @@
 	},
 	"auto_update_extensions": {
 		"html": true,
+		"Git Firefly": true,
 		"Catppuccin": true,
-		"VSCode Icons Theme": true
+		"Catppuccin Icons": true
 	},
 	"autosave": "on_window_change",
 	"auto_update": true,
 	"base_keymap": "JetBrains",
-	"buffer_font_size": null,
+	"buffer_font_size": 16.0,
 	"buffer_font_family": "Menlo",
 	"buffer_font_fallbacks": ["0xProto Nerd Font Mono"],
 	"buffer_font_weight": 200,
-	"buffer_line_height": { "custom": 1.6 },
+	"buffer_line_height": {
+		"custom": 1.6
+	},
 	"cursor_blink": false,
 	"cursor_shape": "bar",
 	"scrollbar": {
 		"show": "always"
 	},
-	"tab_bar": { "show": true, "show_nav_history_buttons": false },
+	"tab_bar": {
+		"show": true,
+		"show_nav_history_buttons": false
+	},
 	"tabs": {
 		"close_position": "right",
 		"file_icons": true,
 		"git_status": true,
 		"activate_on_close": "neighbour"
 	},
-	"enable_language_server": true,
 	"ensure_final_newline_on_save": false,
 	"git": {
 		"git_gutter": "tracked_files",
@@ -78,7 +93,9 @@
 		"working_directory": "current_project_directory",
 		"font_size": 15,
 		"blinking": "on",
-		"line_height": { "custom": 1.6 },
+		"line_height": {
+			"custom": 1.6
+		},
 		"toolbar": {
 			"breadcrumbs": true
 		}
@@ -89,8 +106,8 @@
 		"mode": "system"
 	},
 	"icon_theme": {
-		"dark": "VSCode Icons (Dark)",
-		"light": "VSCode Icons (Light)",
+		"dark": "Catppuccin Macchiato",
+		"light": "Catppuccin Latte",
 		"mode": "system"
 	},
 	"project_panel": {
@@ -106,7 +123,7 @@
 		"default_width": 540,
 		"default_model": {
 			"provider": "zed.dev",
-			"model": "claude-3-5-sonnet-latest"
+			"model": "claude-3-7-sonnet-latest"
 		},
 		"version": "2",
 		"enabled": true,
@@ -114,5 +131,21 @@
 	},
 	"show_completion_documentation": true,
 	"show_edit_predictions_in_menu": true,
-	"show_completions_on_input": true
+	"show_completions_on_input": true,
+	"formatter": "auto",
+	"enable_language_server": true,
+	"languages": {
+		"TypeScript": {
+			"formatter": {
+				"external": {
+					"command": "prettier",
+					"arguments": [
+						"--stdin-filepath",
+						"{buffer_path}",
+						"--write"
+					]
+				}
+			}
+		}
+	}
 }

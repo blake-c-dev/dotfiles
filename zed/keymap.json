@@ -7,19 +7,24 @@
 // from the command palette.
 [
 	{
-		"context": "Workspace",
 		"bindings": {
-			// "shift shift": "file_finder::Toggle"
+			"cmd-7": "outline_panel::ToggleFocus",
+			"cmd-0": "git_panel::ToggleFocus",
+			"cmd-1": "project_panel::ToggleFocus",
+			"ctrl-tab": "pane::ActivateNextItem",
+			"ctrl-shift-tab": "pane::ActivatePreviousItem"
 		}
 	},
 	{
-		"context": "Editor",
+		"context": "ProjectPanel",
 		"bindings": {
-			// "j k": ["workspace::SendKeystrokes", "escape"]
-			"cmd-7": "outline_panel::ToggleFocus",
-			"cmd-1": "project_panel::ToggleFocus",
-			"ctrl-tab": "pane::ActivateNextItem",
-			"ctrl-shift-tab": "pane::ActivatePrevItem"
+			"cmd-1": "workspace::ToggleLeftDock"
+		}
+	},
+	{
+		"context": "GitPanel",
+		"bindings": {
+			"cmd-0": "git_panel::Close"
 		}
 	}
 ]
