@@ -1,0 +1,50 @@
+{
+	"mcp": {
+		"servers": {
+			"playwright": {
+				"command": "npx",
+				"args": ["@playwright/mcp@latest"]
+			}
+		}
+	},
+	"editor.fontSize": 16,
+	"editor.fontFamily": "Menlo",
+	"editor.fontWeight": "200",
+	"editor.lineHeight": 1.6,
+	"editor.cursorBlinking": "solid",
+	"editor.cursorStyle": "line",
+	"editor.renderLineHighlight": "all",
+	"editor.guides.indentation": true,
+	"editor.guides.highlightActiveIndentation": true,
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"editor.acceptSuggestionOnEnter": "on",
+	"editor.inlineSuggest.enabled": true,
+	"editor.renderWhitespace": "selection",
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": false
+	},
+	"workbench.editor.showTabs": "multiple",
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": false,
+	"window.zoomLevel": 0,
+	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.lineHeight": 1.6,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.fontFamily": "Menlo, 0xProto Nerd Font Mono",
+	"git.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"explorer.compactFolders": false,
+	"telemetry.telemetryLevel": "off",
+	"update.mode": "default",
+	"editor.bracketPairColorization.enabled": true,
+	"keyboard.dispatch": "keyCode",
+	"workbench.startupEditor": "none",
+	"workbench.sideBar.location": "left",
+	"workbench.iconTheme": "catppuccin-macchiato",
+	"workbench.colorTheme": "Catppuccin Macchiato"
+}
