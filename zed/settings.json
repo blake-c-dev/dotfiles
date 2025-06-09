@@ -19,7 +19,7 @@
 			"**/.bashrc",
 			"**/.gitignore"
 		],
-		"mode": "eager_preview"
+		"mode": "subtle"
 	},
 	"features": {
 		"edit_prediction_provider": "zed"
@@ -33,13 +33,17 @@
 		"magnification": 1.1,
 		"border_size": 0.0
 	},
+	"minimap": {
+		"show": "auto",
+		"thumb": "always"
+	},
 	"auto_update_extensions": {
 		"html": true,
 		"Git Firefly": true,
 		"Catppuccin": true,
 		"Catppuccin Icons": true
 	},
-	"autosave": "on_window_change",
+	"autosave": "on_focus_change",
 	"auto_update": true,
 	"base_keymap": "JetBrains",
 	"buffer_font_size": 16.0,
@@ -113,29 +117,44 @@
 	"project_panel": {
 		"scrollbar": {
 			"show": "auto"
-		}
+		},
+		"default_width": 250
 	},
 	"ui_font_weight": 200,
 	"ui_font_size": 15,
 	"ui_font_family": "Menlo",
 	"ui_font_fallbacks": ["0xProto Nerd Font Mono"],
-	"assistant": {
+	"agent": {
+		"always_allow_tool_actions": true,
+		"default_profile": "write",
 		"default_width": 540,
 		"default_model": {
 			"provider": "zed.dev",
-			"model": "claude-3-7-sonnet-latest"
+			"model": "claude-sonnet-4"
 		},
 		"version": "2",
-		"enabled": true,
-		"provider": null
+		"enabled": true
 	},
 	"show_completion_documentation": true,
+	"hide_mouse": "on_typing_and_movement",
 	"show_edit_predictions_in_menu": true,
 	"show_completions_on_input": true,
 	"formatter": "auto",
 	"enable_language_server": true,
+	"inlay_hints": {
+		"enabled": false,
+		"toggle_on_modifiers_press": {
+			"control": true
+		}
+	},
 	"languages": {
 		"TypeScript": {
+			"inlay_hints": {
+				"enabled": true,
+				"show_type_hints": true,
+				"show_value_hints": true,
+				"show_other_hints": true
+			},
 			"formatter": {
 				"external": {
 					"command": "prettier",
@@ -144,6 +163,14 @@
 						"{buffer_path}",
 						"--write"
 					]
+				}
+			}
+		},
+		"LaTeX": {
+			"formatter": {
+				"external": {
+					"command": "latexindent",
+					"arguments": ["-"]
 				}
 			}
 		}
