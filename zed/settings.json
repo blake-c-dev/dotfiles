@@ -25,15 +25,13 @@
 		"edit_prediction_provider": "zed"
 	},
 	"language_models": {
-		"anthropic": {
-			"version": "1"
-		}
+		"anthropic": {}
 	},
 	"active_pane_modifiers": {
-		"magnification": 1.1,
 		"border_size": 0.0
 	},
 	"minimap": {
+		"display_in": "active_editor",
 		"show": "auto",
 		"thumb": "always"
 	},
@@ -87,7 +85,7 @@
 		"file_icons": true
 	},
 	"soft_wrap": "editor_width",
-	"tab_size": 4,
+	"tab_size": 2,
 	"telemetry": {
 		"diagnostics": false,
 		"metrics": false
@@ -132,12 +130,10 @@
 			"provider": "zed.dev",
 			"model": "claude-sonnet-4"
 		},
-		"version": "2",
 		"enabled": true
 	},
 	"show_completion_documentation": true,
 	"hide_mouse": "on_typing_and_movement",
-	"show_edit_predictions_in_menu": true,
 	"show_completions_on_input": true,
 	"formatter": "auto",
 	"enable_language_server": true,
@@ -158,11 +154,7 @@
 			"formatter": {
 				"external": {
 					"command": "prettier",
-					"arguments": [
-						"--stdin-filepath",
-						"{buffer_path}",
-						"--write"
-					]
+					"arguments": ["--stdin-filepath", "{buffer_path}", "--write"]
 				}
 			}
 		},
